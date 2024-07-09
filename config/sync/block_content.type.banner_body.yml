@@ -1,0 +1,8 @@
+uuid: 37eea1ef-72a6-4c2e-8af2-be763febea88
+langcode: en
+status: true
+dependencies: {  }
+id: banner_body
+label: Banner-body
+revision: false
+description: null

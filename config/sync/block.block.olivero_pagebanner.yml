@@ -1,0 +1,30 @@
+uuid: 912e58d0-dd90-4003-a47f-faec9ef717ed
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image_banner:91d947ae-35db-444b-85c6-67e447c13b2a'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: olivero_pagebanner
+theme: olivero
+region: content_above
+weight: 0
+provider: null
+plugin: 'block_content:91d947ae-35db-444b-85c6-67e447c13b2a'
+settings:
+  id: 'block_content:91d947ae-35db-444b-85c6-67e447c13b2a'
+  label: 'Page Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/contact/contact_us\r\n/form/contact"

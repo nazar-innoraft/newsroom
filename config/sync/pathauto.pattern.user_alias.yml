@@ -1,0 +1,14 @@
+uuid: 1aa260cf-ce92-4bc5-aa90-9a4bbd1850af
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_alias
+label: user-alias
+type: 'canonical_entities:user'
+pattern: '[user:roles:last]/[user:account-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

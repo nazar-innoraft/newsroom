@@ -1,0 +1,21 @@
+uuid: 2f5637c0-e075-4b7b-afa1-a9f0a5aec587
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us
+    - field.storage.contact_message.field_city
+  module:
+    - options
+id: contact_message.contact_us.field_city
+field_name: field_city
+entity_type: contact_message
+bundle: contact_us
+label: City
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

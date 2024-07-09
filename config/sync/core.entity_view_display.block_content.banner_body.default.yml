@@ -1,0 +1,25 @@
+uuid: 53e9a1a7-2a1a-4a10-bd50-63f59aa9e737
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_body
+    - field.field.block_content.banner_body.field_banner_body
+  module:
+    - entity_reference_revisions
+id: block_content.banner_body.default
+targetEntityType: block_content
+bundle: banner_body
+mode: default
+content:
+  field_banner_body:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

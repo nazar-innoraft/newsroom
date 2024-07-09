@@ -1,0 +1,25 @@
+uuid: c971fe35-b363-44e6-bccc-bfacbfdf4f45
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d803a683-2d32-4784-8eea-0ff75b932e4a'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: olivero_reachus
+theme: olivero
+region: footer_top
+weight: 0
+provider: null
+plugin: 'block_content:d803a683-2d32-4784-8eea-0ff75b932e4a'
+settings:
+  id: 'block_content:d803a683-2d32-4784-8eea-0ff75b932e4a'
+  label: 'Reach us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,38 @@
+uuid: 5b35f649-fb25-4d3b-bd7b-ae8334bbb0df
+langcode: en
+status: true
+dependencies:
+  module:
+    - eca_content
+id: content
+modeller: core
+label: content
+version: ''
+weight: 0
+events:
+  content_entity_insert:
+    plugin: 'content_entity:insert'
+    label: 'Insert content entity'
+    configuration:
+      type: 'node _all'
+    successors:
+      -
+        id: action_send_email_action
+        condition: eca_entity_is_new
+conditions:
+  eca_entity_is_new:
+    plugin: eca_entity_is_new
+    configuration:
+      negate: true
+      entity: ''
+gateways: {  }
+actions:
+  action_send_email_action:
+    plugin: action_send_email_action
+    label: 'Send email'
+    configuration:
+      recipient: superadmin@flipkart.com
+      subject: 'New content'
+      message: "[user:account-name] has created a new content of title [node:title]   \r\ncheck here [node:url]"
+      replace_tokens: true
+    successors: {  }
