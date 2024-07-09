@@ -1,0 +1,12 @@
+uuid: ce396f55-c551-44e4-bbc6-807619394338
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - nazar.ali@innoraft.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

@@ -1,0 +1,33 @@
+uuid: 02924806-7262-4047-9bd7-556c2cc34f96
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - options
+id: contact_message.field_state
+field_name: field_state
+entity_type: contact_message
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: west_bengal
+      label: 'West Bengal'
+    -
+      value: maharastra
+      label: Maharastra
+    -
+      value: kerala
+      label: Kerala
+    -
+      value: delhi
+      label: Delhi
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
